@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package masonTTschema.masonTTpackage;
+
+option go_package="github.com/callnothing/masonTT/grpc-go/masonTTschema/masonTTpackage";
+
+
+service Axxxxx {
+    rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+
+message HelloRequest {
+    string msg = 1;
+}
+message HelloReply {
+    string msg = 1;
+    string code = 2;
+}
